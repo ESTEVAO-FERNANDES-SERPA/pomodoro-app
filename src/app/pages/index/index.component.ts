@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { SidebarComponent } from 'src/app/components/sidebar/sidebar.component';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     FormsModule,
 		ReactiveFormsModule,
+    SidebarComponent
     ],
     providers: [],
 })
