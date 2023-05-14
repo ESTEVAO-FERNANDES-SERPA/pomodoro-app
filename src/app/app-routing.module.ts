@@ -5,7 +5,23 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadComponent: () => import('./pages/index/index.component').then(m => m.IndexComponent),
+    redirectTo:'timer'
+  },
+  {
+    path: 'timer',
+    loadComponent: () => import('./pages/timer/timer.component').then(m => m.TimerComponent),
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./pages/timer/timer.component').then(m => m.TimerComponent),
+  },
+  {
+    path: 'dashboard',
+    loadComponent: () => import('./pages/timer/timer.component').then(m => m.TimerComponent),
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('./pages/timer/timer.component').then(m => m.TimerComponent),
   },
 ];
 

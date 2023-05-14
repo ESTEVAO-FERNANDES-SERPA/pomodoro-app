@@ -1,24 +1,27 @@
 :root {
-    --primary-color: #FF5A17;
-    --primary-color-ascent: #FFBDA2;
-    --primary-color-ascent-opacity: rgba(246, 232, 233, 0.5);
-  
-    --avatar-color:#F0BF4D;
-    --avatar-text:#19191F;
-  
-    --border:#D1D1D5;
-    --bg-light:#e9e9e9;
-  
-    --gray-3: #3a322f;
-    --clear-5: #f9fafc;
-  
+    --bg-color: rgba(255, 255, 255,0.2);
+    --bg-color-strong: rgba(255, 255, 255,0.3);
+
+    --bg-color-hover:rgba(255, 255, 255,0.1);
+   
+    --text-color:rgba(255, 255, 255, 0.771);
     --mainFont: "Roboto", sans-serif;
     --subFont: "Poppins", sans-serif;
+
   }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  p,span,a{
+    margin: 0;
+    padding: 0;
+    font-family: var(--mainFont);
+    color: var(--text-color);
+  }
+  button{
+    cursor: pointer;
   }
   html {
     @media (max-width: 1080px) {
@@ -26,6 +29,9 @@
     }
     @media (max-width: 720px) {
       font-size: 87.5%;
+    }
+    @media (max-width: 620px) {
+      font-size: 80.5%;
     }
     scroll-behavior: smooth;
   }
@@ -36,3 +42,9 @@
     overflow-x: hidden;
   }
   
+.active{
+  color: white !important;
+  background-color: rgba(255, 255, 255,0.1);
+}
+
+

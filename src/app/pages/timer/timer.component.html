@@ -1,0 +1,24 @@
+<section class="timer h-100">
+    <div class="row h-100">
+        <div class="col col-12 col-md-12 col-lg-6 ">
+            <div class="box-count  ">
+                <div class="box-title">
+                    <p>Pomodoro <b>0</b></p>
+                    <p>Short Rest <b>0</b></p>
+                    <p>Long Rest <b>0</b></p>
+                </div>
+                <div class="w-100 box-countdown text-center">
+                    <countdown class="countdown" [config]="{leftTime: 10*60, format: 'mm:ss'}"></countdown>
+                </div>
+                <div class="box-btns">
+                    <button>{{ 'start' | uppercase }}</button>
+                   <a class="mt-2">Restart Timer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-12 col-lg-6">
+            oi
+        </div>
+    </div>
+</section>
+

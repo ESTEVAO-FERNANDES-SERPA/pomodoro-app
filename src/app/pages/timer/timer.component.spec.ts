@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IndexComponent } from './index.component';
+import { TimerComponent } from './timer.component';
 
-describe('IndexComponent', () => {
-  let component: IndexComponent;
-  let fixture: ComponentFixture<IndexComponent>;
+describe('TimerComponent', () => {
+  let component: TimerComponent;
+  let fixture: ComponentFixture<TimerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IndexComponent ]
+      declarations: [ TimerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(IndexComponent);
+    fixture = TestBed.createComponent(TimerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
